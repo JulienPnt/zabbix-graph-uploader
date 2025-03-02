@@ -3,12 +3,14 @@
 ## 📝 Description
 
 This Bash script allows you to download monitoring graphs from a Zabbix server. It retrieves **all graphs available for a given host**, from a **specified date**, and for a **defined duration**.
-🔥 Features
-✅ URL validation for Zabbix API
-✅ Authentication with session cookies
-✅ Retrieval of host ID
-✅ Fetching available graphs
-✅ Downloading graphs to a local directory
+
+### 🔥 Features
+
+- ✅ URL validation for Zabbix API
+- ✅ Authentication with session cookies
+- ✅ Retrieval of host ID
+- ✅ Fetching available graphs
+- ✅ Downloading graphs to a local directory
 
 ## 📌 Requirements
 
@@ -39,7 +41,7 @@ export ZABBIX_PASSWORD=PASSWORD
 
 ### 📌 Example Execution
 
-`./script.sh ec2-preprod '2025-01-31 15:36:00' 3600`
+`./zabbix-graph-downloader.sh ec2-preprod '2025-01-31 15:36:00' 3600`
 
 The downloaded graphs will be stored in `~/Images/<hostname>_<start_date>_<end_date>`.
 
